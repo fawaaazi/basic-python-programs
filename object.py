@@ -10,12 +10,14 @@ class student:
         self.age=int(input("Enter age:")) 
         self.address=input("Enter address:")
         self.id=int(input("Enter id:"))
+        self.parent=input("enter parent name:")
 
     def printDetails(self):
         print("Name:",self.name)  
         print("Address:",self.address)
         print("Age:",self.age)
         print("ID:",self.id)
+        print("parent:",self.parent)
     def changeAddress(self):
         self.address=input("Enter new address:")
 obj1=student()  
