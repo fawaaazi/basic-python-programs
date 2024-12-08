@@ -8,7 +8,14 @@ class person:
         print("Name:",self.name)
         print("Age:",self.age)
         print("Address:",self.address)
-class student(person):
+class child:
+    def __init__(self):
+        self.parent=""
+    def getParent(self):
+        self.parent=input("Enter the name of parent")
+    def displayParent(self):
+        print("Parent:",self.parent)
+class student(person,child):
     def studentDetails(self):
         self.ID=input("Enter ID:")
 
@@ -22,4 +29,6 @@ student1=student()
 student1.getDetails()
 student1.studentDetails()
 student1.displayStudent()     
+student1.getParent()
+student1.displayParent()
        
